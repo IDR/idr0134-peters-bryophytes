@@ -19,6 +19,24 @@ with open("experimentA/idr0134-experimentA-filePaths.tsv") as inputFile:
         imagePaths.add(imgPath)
 # print("Read filenames", len(imagePaths))
 
+
+# Read all image paths from annotation.csv...
+csvPaths = set()
+with open("experimentA/idr0134-scapaniaceae-annotation.csv") as inputFile:
+    reader = csv.reader(inputFile, delimiter=',')
+    image_column = None
+    dataset_column = None
+    for row in reader:
+        if image_column is None:
+            image_column = row.index("Image File")
+            dataset_column = row.index("Dataset Name")
+            continue
+        image_name = row[image_column]
+        dataset_name = row[dataset_column]
+        image_path = f"{dataset_name}/{image_name}"
+        csvPaths.add(image_path)
+
+
 renamed_images = []
 annotations_without_filepath = []
 
@@ -60,6 +78,9 @@ with open("experimentA/idr0134-scapaniaceae-annotation.csv") as inputFile:
                 renamed_images.append(renamed)
                 continue
             # print("NOT found", image_path)
+            # we can ignore any .jpeg if a duplicate .tiff exists 
+            if (image_path.endswith(".jpeg") and image_path.replace(".jpeg", ".tiff")) in csvPaths:
+                continue
             annotations_without_filepath.append(image_path)
 
 
