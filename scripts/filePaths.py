@@ -17,8 +17,10 @@ with open("noJpegTiffDuplicates7thJune.txt") as csvfile:
         if not ".ome.tiff" in line:
             continue
         path = line.replace(base_dir, "").replace(globas_dir, "").replace(ftp_dir, "")
-        ds_name = path.split("/")[0]
-        rows.append([project + "Dataset:name:" + ds_name, line])
+        # Fix "spitzbergensis" -> "spitsbergensis"
+        ds_name = path.split("/")[0].replace("spitzbergensis", "spitsbergensis")
+        img_name = path.split("/")[-1].replace("spitzbergensis", "spitsbergensis")
+        rows.append([project + "Dataset:name:" + ds_name, line, img_name])
 
 # write tsv
 with open('idr0134-experimentA-filePaths.tsv', 'w') as tsvfile:
