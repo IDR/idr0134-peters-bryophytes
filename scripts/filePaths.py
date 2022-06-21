@@ -13,6 +13,16 @@ project = "Project:name:idr0134-peters-bryophytes/experimentA/"
 reuploaded_img = "IMG_9021 Scapania aequiloba stature dorsal side (MP-E 2x).ome.tiff"
 reuploaded_dir = "20220608-ftp/"
 
+typos = [
+    ["frisch", "fresh"],
+    ["spitzbergensis", "spitsbergensis"],
+    ["scapania_ hyperborea", "scapania_hyperborea"]
+]
+def fix_typos(text):
+    for typo in typos:
+        text = text.replace(typo[0], typo[1])
+    return text
+
 img_keys = set()
 duplicates = 0
 with open("noJpegTiffDuplicates7thJune.txt") as csvfile:
@@ -23,8 +33,8 @@ with open("noJpegTiffDuplicates7thJune.txt") as csvfile:
             continue
         path = line.replace(base_dir, "").replace(globas_dir, "").replace(ftp_dir, "")
         # Fix "spitzbergensis" -> "spitsbergensis"
-        ds_name = path.split("/")[0].replace("spitzbergensis", "spitsbergensis")
-        img_name = path.split("/")[-1].replace("spitzbergensis", "spitsbergensis")
+        ds_name = fix_typos(path.split("/")[0])
+        img_name = fix_typos(path.split("/")[-1])
         img_key = f'{ds_name},{img_name}'
         if img_name == reuploaded_img:
             line = line.replace(ftp_dir, reuploaded_dir)
