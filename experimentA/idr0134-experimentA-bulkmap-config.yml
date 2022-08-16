@@ -82,6 +82,13 @@ columns:
           include: true
 
   - group:
+      namespace: openmicroscopy.org/mapr/organism/supplementary
+      columns:
+      - name: Comment [Organism]
+        clientname: Organism Comment
+        include: yes
+
+  - group:
       namespace: openmicroscopy.org/mapr/phenotype
       columns:
       - name: Phenotype
