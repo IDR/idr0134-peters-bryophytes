@@ -80,8 +80,8 @@ columns:
         - name: Characteristics [Organism]
           clientname: Organism
           include: true
-        - name: Characteristics [Organism Alternative Name]
-          clientname: Alternative Name
+        - name: Characteristics [Alternative Organism Name]
+          clientname: Alternative Organism Name
           include: yes
 
   - group:
