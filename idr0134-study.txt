@@ -15,7 +15,7 @@ Study Experiments Number	1
 Study External URL	
 																													
 Study BioImage Archive Accession	S-BIAD188																																	
-Study Public Release Date																															
+Study Public Release Date	2022-08-25																															
 																																	
 # Study Publication																																	
 Study PubMed ID																																
