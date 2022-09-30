@@ -3,9 +3,9 @@
 # Section with generic information about the study including title, description, publication details (if applicable) and contact details																																						
 Comment[IDR Study Accession]	idr0134																																
 Study Title	Reference BioImaging dataset to assess the phenotypic trait diversity of bryophytes within the family Scapaniaceae																																
-Study Type	phenotype																																
-Study Type Term Source REF	EFO																																
-Study Type Term Accession	EFO_0000651																																
+Study Type	histology																																
+Study Type Term Source REF																																	
+Study Type Term Accession																																	
 Study Description	Here, we present a high-quality reference dataset containing macroscopic and bright-field microscopic images documenting various phenotypic properties of the species belonging to the family of Scapaniaceae occurring in Europe. The information contained in the images is of particular interest for biodiversity research, machine learning and image segmentation used in bioinformatics and computational ecology.																	
 Study Key Words	phenotypes	bryophytes	liverworts	bright-field microscopy	differential interphase contrast microscopy	macroscopy	biodiversity	scapaniaceae	scapania	diplophyllum	douinia	morphology	anatomy																												
 Study Organism	Diplophyllum albicans	Diplophyllum obtusatum	Diplophyllum obtusifolium	Diplophyllum taxifolium	Douinia ovata	Scapania aequiloba	Scapania apiculata	Scapania aspera	Scapania brevicaulis	Scapania calcicola	Scapania carinthiaca var. massalongi	Scapania compacta	Scapania crassiretis	Scapania curta	Scapania cuspiduligera	Scapania degenii	Scapania glaucocephala	Scapania gracilis	Scapania gymnostomophila	Scapania helvetica	Scapania hyperborea	Scapania irrigua	Scapania irrigua subsp. irrigua	Scapania irrigua subsp. rufescens	Scapania kaurinii	Scapania ligulifolia	Scapania lingulata	Scapania mucronata	Scapania nemorea	Scapania nimbosa	Scapania obcordata	Scapania obscura	Scapania ornithopodioides	Scapania paludicola	Scapania paludosa	Scapania parvifolia	Scapania praetervisa	Scapania scandica	Scapania simmonsii	Scapania sphaerifera	Scapania spitsbergensis	Scapania subalpina	Scapania tundrae	Scapania uliginosa	Scapania umbrosa	Scapania undulata	Scapania verrucosa	Scapania zemliae																																
