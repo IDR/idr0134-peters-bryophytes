@@ -18,11 +18,11 @@ Study BioImage Archive Accession	S-BIAD188
 Study Public Release Date	2022-08-25																															
 																																	
 # Study Publication																																	
-Study PubMed ID																																
-Study Publication Title	Reference BioImaging to assess the phenotypic trait diversity of bryophytes within the family Scapaniaceae																																
+Study PubMed ID	36195605																																
+Study Publication Title	Reference bioimaging to assess the phenotypic trait diversity of bryophytes within the family Scapaniaceae																																
 Study Author List	Peters K, König-Ries B																															
-Study PMC ID																																
-Study DOI																																
+Study PMC ID	 PMC9532418																																
+Study DOI	https://doi.org/10.1038/s41597-022-01691-x																																
 																																	
 # Study Contacts																																	
 Study Person Last Name	Peters																																
